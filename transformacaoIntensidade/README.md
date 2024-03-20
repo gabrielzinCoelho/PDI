@@ -4,6 +4,8 @@ Funções de transformação de intensidade se enquadram na categoria de método
 
 Diferentemente dos métodos de filtragem espacial, que também são métodos que atuam no domínio espacial, as operações de transformação de intensidade **determinam o novo nível de intensidade de um determinado pixel baseado exclusivamente no seu atual valor**, dessa forma, sem considerar o valor dos seus pixel's vizinhos.
 
+## Definição matemática
+
 Tais funções podem ser expressas como: 
 
 $g(x, y) = T[f(x, y)]$
@@ -15,3 +17,11 @@ No caso específico das funções de intensidade, **T** é definido como uma fun
 $s = T(r)$
 
 onde **r** e **s** denotam os níveis de intensidade dos pixels em **f(x, y)** e **g(x, y)** respectivamente.
+
+## Exemplos de implementações
+
+* [Limiarização]()
+* [Negativo de Imagens]()
+* [Transformação Logarítimica]()
+* [Transformação de Potência]()
+* [Transformação Linear Definida por Partes]()
