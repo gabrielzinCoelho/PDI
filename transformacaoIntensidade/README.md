@@ -24,4 +24,4 @@ onde **r** e **s** denotam os níveis de intensidade dos pixels em **f(x, y)** e
 * [Negativo de Imagens]()
 * [Transformação Logarítimica]()
 * [Transformação de Potência]()
-* [Transformação Linear Definida por Partes]()
+* [Transformação Linear Definida por Partes](linearPorPartes)
