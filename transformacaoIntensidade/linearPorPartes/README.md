@@ -12,7 +12,7 @@ Podemos definir, por exemplo, dois pontos $(r_1, s_1)$ e $(r_2, s_2)$ que vão d
 
 Vale ressaltar a importância da seguinte condição ser respeitada visando respeitar a ordem dos níveis de cinza:
 
-$r_1 \leq r_2 e s_1 \leq s_2$
+$r_1 \leq r_2$ e $s_1 \leq s_2$
 
 Para funções mais complexas, mais parâmetros devem ser definidos.
 
