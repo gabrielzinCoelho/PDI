@@ -1,4 +1,4 @@
-# Funções de transformação de Intensidade Básicas
+# Funções de Transformação de Intensidade Básicas
 
 Funções de transformação de intensidade se enquadram na categoria de métodos de processamento que ocorrem no **domínio do espaço**, ou seja, operam diretamente sobre os pixels da imagem.
 
@@ -10,13 +10,13 @@ Tais funções podem ser expressas como:
 
 <p> $g(x, y) = T[f(x, y)]$ </p>
 
-onde **g(x, y)** é a função que determina a imagem de saída, **f(x, y)** a função que determina a imagem de entrada e **T** um operador que atua sobre **f** defininido na vizinhança de **(x, y)**.
+onde $g(x, y)$ é a função que determina a imagem de saída, $f(x, y)$ a função que determina a imagem de entrada e $T$ um operador que atua sobre $f$ defininido na vizinhança de $(x, y)$.
 
-No caso específico das funções de intensidade, **$$T$** é definido como uma função de transformação de intensidade expressa da seguinte forma:
+No caso específico das funções de intensidade, $T$ é definido como uma função de transformação de intensidade expressa da seguinte forma:
 
-</p> $s = T(r)$ </p>
+<p> $s = T(r)$ </p>
 
-onde **r** e **s** denotam os níveis de intensidade dos pixels em **$f(x, y)$** e **$g(x, y)$** respectivamente.
+onde $r$ e $s$ denotam os níveis de intensidade dos pixels em $f(x, y)$ e $g(x, y)$ respectivamente.
 
 ## Exemplos de implementações
 
