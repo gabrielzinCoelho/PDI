@@ -16,10 +16,7 @@ $r_1 \leq r_2$ e $s_1 \leq s_2$
 
 Para funções mais complexas, mais parâmetros devem ser definidos.
 
-<div style="display: flex; flex-direction: row; justify-content: center;">
+<p align="center">
     <img src="./readmeImg/transformacaoPartes.jpg" width="200px" height="200px">
     <img src="./readmeImg/alargamentoConstraste.jpg" width="200px" height="200px">
-</div>
-
-
-
+</p>
