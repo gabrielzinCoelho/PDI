@@ -4,7 +4,7 @@ Observe que a imagem de saída possui muito mais detalhes vísiveis e nitidez.
 
 Isso ocorre justamente porque a mesma utiliza um intervalo maior do espectro de intensidade para representar seus pixels.
 
-Essa comparação se torna clara se compararmos os histogramas gerados por ambas imagens.
+Essa comparação se torna clara se contrapormos os histogramas gerados por ambas imagens.
 
 <p align="center">
     <img src="../readmeImg/pollen.jpg" width="200px" height="200px">

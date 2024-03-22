@@ -21,7 +21,7 @@ Para funções mais complexas, mais parâmetros devem ser definidos.
     <img src="./readmeImg/alargamentoConstraste.jpg" width="200px" height="200px">
 </p>
 
-Veja um exemplo em que a técninca de [alargamento de contraste](alongamentoContraste) foi aplicado para melhorar a visibilidade de uma imagem.
+Veja um exemplo em que a técnica de [alargamento de contraste](alongamentoContraste) foi aplicada para melhorar a visibilidade de uma imagem.
 
 <p align="center">
     <img src="./readmeImg/pollen.jpg" width="200px" height="200px">
