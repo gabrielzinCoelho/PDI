@@ -8,13 +8,13 @@ Diferentemente dos métodos de filtragem espacial, que também são métodos que
 
 Tais funções podem ser expressas como: 
 
-<p> $g(x, y) = T[f(x, y)]$ </p>
+&nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = T[f(x, y)]$
 
 onde $g(x, y)$ é a função que determina a imagem de saída, $f(x, y)$ a função que determina a imagem de entrada e $T$ um operador que atua sobre $f$ defininido na vizinhança de $(x, y)$.
 
 No caso específico das funções de intensidade, $T$ é definido como uma função de transformação de intensidade expressa da seguinte forma:
 
-<p> $s = T(r)$ </p>
+&nbsp;&nbsp;&nbsp;&nbsp; $s = T(r)$
 
 onde $r$ e $s$ denotam os níveis de intensidade dos pixels em $f(x, y)$ e $g(x, y)$ respectivamente.
 
