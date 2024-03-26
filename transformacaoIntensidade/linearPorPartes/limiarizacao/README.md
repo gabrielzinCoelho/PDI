@@ -1,13 +1,13 @@
 # Limiarização
 
 <p align="center">
-    <img src="../readmeImg/cameramen.jpg" width="200px" height="200px">
-    <img src="../readmeImg/cameramen_output.jpg" width="200px" height="200px">
+    <img src="../readmeImg/cameramen.jpg" width="300px" height="200px">
+    <img src="../readmeImg/cameramen_output.jpg" width="300px" height="200px">
 </p>
 
 <p align="center">
-    <img src="./readmeImg/hist_cameramen_input.jpg" width="200px" height="200px">
-    <img src="./readmeImg/hist_cameramen_output.jpg" width="200px" height="200px">
+    <img src="./readmeImg/hist_cameramen_input.jpg" width="300px" height="200px">
+    <img src="./readmeImg/hist_cameramen_output.jpg" width="300px" height="200px">
 </p>
 
 ## Detalhes da Implementação
