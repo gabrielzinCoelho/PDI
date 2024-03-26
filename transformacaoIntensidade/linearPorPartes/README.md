@@ -27,3 +27,22 @@ Veja um exemplo em que a técnica de [alargamento de contraste](alongamentoContr
     <img src="./readmeImg/pollen.jpg" width="200px" height="200px">
     <img src="./readmeImg/pollen_output.jpg" width="200px" height="200px">
 </p>
+
+## Limiarização
+
+Converge uma imagem em escala de cinza em uma imagem binária.
+
+Pixels com intensidade acima de um determinado limiar são definidos como 1 (branco) e aqueles com intensidade inferior como 0 (preto).
+
+Facilmente implementada como uma função linear definida por partes: basta que $r_1 = r_2 = L$, onde L é o valor definido como limiar da função, além disso, $s_1 = 0$ e $s_2 = 255$.
+
+<p align="center">
+    <img src="./readmeImg/thresholdFunc.jpg" width="200px" height="200px">
+</p>
+
+Veja um exemplo em que a técnica de [limiarização](limiarizacao) foi aplicada em uma imagem.
+
+<p align="center">
+    <img src="./readmeImg/cameramen.jpg" width="200px" height="200px">
+    <img src="./readmeImg/cameramen_output.jpg" width="200px" height="200px">
+</p>
