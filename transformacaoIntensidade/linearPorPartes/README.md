@@ -2,7 +2,7 @@
 
 Transformação Linear Definida por Partes permite definir a forma da função de intensidade de maneira arbitrariamente complexa.
 
-Largamente aplicada para alongamento de contraste e fatiamento de bits.
+Largamente aplicada para alongamento de contraste e limiarização.
 
 ## Alongamento de Contraste
 
@@ -26,15 +26,4 @@ Veja um exemplo em que a técnica de [alargamento de contraste](alongamentoContr
 <p align="center">
     <img src="./readmeImg/pollen.jpg" width="200px" height="200px">
     <img src="./readmeImg/pollen_output.jpg" width="200px" height="200px">
-</p>
-
-## Fatiamento de Bits
-
-Técnica útil para compressão de imagens.
-
-Permite analisar a importância relativa de cada bit na imagem e definir o número adequado de bits para quantizá-la.
-
-<p align="center">
-    <img src="./readmeImg/planosDeBit.jpg" width="300px" height="200px">
-    <img src="./readmeImg/fatiamentoBits.jpg" width="300px" height="200px">
 </p>

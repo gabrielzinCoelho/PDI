@@ -20,7 +20,7 @@ onde $r$ e $s$ denotam os níveis de intensidade dos pixels em $f(x, y)$ e $g(x,
 
 ## Exemplos de implementações
 
-* [Limiarização]()
+* [Fatiamento de Bits](fatiamentoBits)
 * [Negativo de Imagens]()
 * [Transformação Logarítimica]()
 * [Transformação de Potência]()
