@@ -2,7 +2,7 @@
 
 Funções de transformação de intensidade se enquadram na categoria de métodos de processamento que ocorrem no **domínio do espaço**, ou seja, operam diretamente sobre os pixels da imagem.
 
-Diferentemente dos métodos de filtragem espacial, que também são métodos que atuam no domínio espacial, as operações de transformação de intensidade **determinam o novo nível de intensidade de um determinado pixel baseado exclusivamente no seu atual valor**, dessa forma, sem considerar o valor dos seus pixel's vizinhos.
+Diferentemente dos métodos de filtragem espacial, que também são métodos que atuam no domínio espacial, as operações de transformação de intensidade **determinam o novo nível de intensidade de um determinado pixel baseado exclusivamente no seu atual valor**, dessa forma, sem considerar o valor dos seus pixels vizinhos.
 
 ## Definição matemática
 

@@ -19,9 +19,9 @@ Essa comparação se torna clara se contrapormos os histogramas gerados por amba
 
 ## Detalhes da Implementação
 
-Veja a implementação do [algoritmo](alongamentoContraste.py) criado para aplicar o alongamento de contraste.
+Veja a implementação do [algoritmo](alongamentoContraste.py) responsável por aplicar o alongamento de contraste nesse exemplo.
 
-Verifique que foram definidas 3 funções afins, cada uma com um determinado coeficiente angular, para compor a função de transformação de intensidade. Cada função foi utilizada em um intervalo específico da faixa de valores de intensidade possíveis (nesse caso 0 - 255, visto que a imagem de entrada possui 8 bits por pixel).
+Verifique que foram definidas 3 funções afins, cada uma com um determinado coeficiente angular, para compor a função de transformação de intensidade. Cada função foi utilizada em um intervalo específico da faixa de valores de intensidade possíveis (nesse caso, 0 - 255, visto que a imagem de entrada possui 8 bits por pixel).
 
 Os parâmetro de entrada são justamente dois pontos no plano cartesiano $(r1, s1)$ e $(r2, s2)$, onde as funções afins se interceptam uma a uma. A escolha dos pontos é um fator importante para o funcionamento correto do algoritmo.
 
