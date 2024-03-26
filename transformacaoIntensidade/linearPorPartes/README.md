@@ -27,3 +27,13 @@ Veja um exemplo em que a técnica de [alargamento de contraste](alongamentoContr
     <img src="./readmeImg/pollen.jpg" width="200px" height="200px">
     <img src="./readmeImg/pollen_output.jpg" width="200px" height="200px">
 </p>
+
+## Fatiamento de Bits
+
+Técnica útil para compressão de imagens.
+
+Permite analisar a importância relativa de cada bit na imagem e definir o número adequado de bits para quantizá-la.
+
+<p align="center">
+    <img src="./readmeImg/planosDeBit.jpg.jpg" width="200px" height="200px">
+</p>
