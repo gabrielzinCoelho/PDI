@@ -18,16 +18,16 @@ As imagens representam, em ordem de maior significância, cada um dos planos que
 Cada plano pode ser representado individualmente como uma imagem binária (assume apenas 0 ou 1 como níveis de intensidade).
 
 <p align="center">
-    <img src="./readmeImg/plano7.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano6.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano5.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano4.jpg" width="250px" height="200px">
+    <img src="./readmeImg/plano7.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano6.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano5.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano4.jpg" width="220px" height="120px">
 </p>
 <p align="center">
-    <img src="./readmeImg/plano3.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano2.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano1.jpg" width="250px" height="200px">
-    <img src="./readmeImg/plano0.jpg" width="250px" height="200px">
+    <img src="./readmeImg/plano3.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano2.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano1.jpg" width="220px" height="120px">
+    <img src="./readmeImg/plano0.jpg" width="220px" height="120px">
 </p>
 
 Geralmente, os bits mais significativos guardam as informações mais importantes para a composição da imagem e, portanto, são selecionados na compressão da mesma. Quanto mais bits forem utilizados, mais o resultado obtido se aproxima da imagem original.
@@ -39,16 +39,16 @@ Na sequência mostrada abaixo, a cada imagem um bit menos significativo é remov
 Observe que mesmo utilizando-se apenas 4 bits para representar os níveis de intensidade de cada pixel a imagem manteve consideravelmente sua integridade. Isso representa uma redução pela metade do tamanho ocupado pela imagem, valor esse significativamente relevante para o processo de transferência de dados pela internet.
 
 <p align="center">
-    <img src="./readmeImg/msb8.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb7.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb6.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb5.jpg" width="250px" height="200px">
+    <img src="./readmeImg/msb8.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb7.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb6.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb5.jpg" width="220px" height="120px">
 </p>
 <p align="center">
-    <img src="./readmeImg/msb4.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb3.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb2.jpg" width="250px" height="200px">
-    <img src="./readmeImg/msb1.jpg" width="250px" height="200px">
+    <img src="./readmeImg/msb4.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb3.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb2.jpg" width="220px" height="120px">
+    <img src="./readmeImg/msb1.jpg" width="220px" height="120px">
 </p>
 
 ## Esteganografia em imagens digitais
