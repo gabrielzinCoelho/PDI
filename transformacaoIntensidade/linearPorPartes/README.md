@@ -35,5 +35,6 @@ Técnica útil para compressão de imagens.
 Permite analisar a importância relativa de cada bit na imagem e definir o número adequado de bits para quantizá-la.
 
 <p align="center">
-    <img src="./readmeImg/planosDeBit.jpg.jpg" width="200px" height="200px">
+    <img src="./readmeImg/planosDeBit.jpg" width="200px" height="200px">
+    <img src="./readmeImg/fatiamentoBits.jpg" width="200px" height="200px">
 </p>
