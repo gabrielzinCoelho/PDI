@@ -22,6 +22,6 @@ onde $r$ e $s$ denotam os níveis de intensidade dos pixels em $f(x, y)$ e $g(x,
 
 * [Fatiamento de Bits](fatiamentoBits)
 * [Negativo de Imagens](negativo)
-* [Transformação Logarítimica]()
+* [Transformação Logarítmica](logaritmica)
 * [Transformação de Potência]()
 * [Transformação Linear Definida por Partes](linearPorPartes)
