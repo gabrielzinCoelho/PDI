@@ -2,14 +2,14 @@
 
 Utilizado para realçar detalhes em brancos ou cinzas cercados de regiões escuras dominantes em uma imagem.
 
-Observe que o olho humano é mais sensível para detectar detalhes brancos em regiões escuras.
+Observe que o olho humano é mais sensível para detectar detalhes brancos em regiões escuras do que o contrário.
 
 <p align="center">
     <img src="./readmeImg/mamografia.jpg" width="300px" height="200px">
     <img src="./readmeImg/mamografia_output.jpg" width="300px" height="200px">
 </p>
 
-É a função inversa da identidade.
+É a inversa da função identidade.
 
 <p align="center">
     <img src="./readmeImg/func.jpg" width="300px" height="200px">
