@@ -26,7 +26,7 @@ Pela função de distribuição cumulativa podemos definir:
 
 Como os níveis de intensidade de uma imagem são valores inteiros, a forma discreta da fórmula acima pode ser definida como um somatório:
 
-&nbsp;&nbsp;&nbsp;&nbsp; $s_k = T(r_k) = (L - 1) \ \sum _{j=0}^{k} \ \ p_r(r_j)$
+&nbsp;&nbsp;&nbsp;&nbsp; $s_k = T(r_k) = (L - 1) \ \sum ._{j=0}^{k} \ \ p_r(r_j)$
 
 , para $k$ = 0, 1, 2, ... , $L - 1$
 
