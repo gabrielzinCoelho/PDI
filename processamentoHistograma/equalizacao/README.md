@@ -6,7 +6,7 @@ A ideia é que a imagem resultante possua uma distribuição mais uniforme dos s
 
 ## Definição matemática
 
-A dedução da fórmula da função de transformação &T(r)& responsável pela equalização do histograma se baseia em duas funções de densidade de probabilidade (FDP): $p_r(r)$ e $p_s(s)$. 
+A dedução da fórmula da função de transformação $T(r)$ responsável pela equalização do histograma se baseia em duas funções de densidade de probabilidade (FDP): $p_r(r)$ e $p_s(s)$. 
 
 Tais funções são, respectivamente, as FDP da imagem original, função arbitrária, e da imagem resultante, que, idealmente, possui um formato uniforme. 
 
@@ -20,13 +20,13 @@ Sendo assim, baseado na teoria da probabilidade, podemos relacionar ambas FDP pe
 
 Pela função de distribuição cumulativa podemos definir:
 
-&nbsp;&nbsp;&nbsp;&nbsp; $s = T(r) = (L - 1) \left(\int_{0}^{r} p_r(w) \; dw\right)$
+&nbsp;&nbsp;&nbsp;&nbsp; $s = T(r) = (L - 1) \left(\int_{0}^{r} p_r(w) dw\right)$
 
-, onde [0, L - 1] é op intervalo fechado de intensidades possíveis.
+, onde $[0, L - 1]$ é o intervalo fechado de intensidades possíveis.
 
 Como os níveis de intensidade de uma imagem são valores inteiros, a forma discreta da fórmula acima pode ser definida como um somatório:
 
-&nbsp;&nbsp;&nbsp;&nbsp; $s_k = T(r_k) = (L - 1) \sum_{j = 0}^{k} p_r(r_j)$
+&nbsp;&nbsp;&nbsp;&nbsp; $s_k = T(r_k) = (L - 1) {\sum_{j = 0}^{k}} p_r(r_j)$
 
 , para $k$ = 0, 1, 2, ... , $L - 1$
 
