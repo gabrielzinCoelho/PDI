@@ -2,7 +2,11 @@
 
 Utilizado para expandir valores baixos de intensidade e comprimir valores altos.
 
-Possui forma geral: $s(r) = c\log(1 + r)$, onde $c$ é uma constante.
+Possui forma geral: 
+
+&nbsp;&nbsp;&nbsp;&nbsp; $s(r) = c\log(1 + r)$
+
+, onde $c$ é uma constante.
 
 <p align="center">
     <img src="./readmeImg/func.jpg" width="300px" height="200px">

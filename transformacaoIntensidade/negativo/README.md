@@ -22,7 +22,7 @@ Veja a implementação do [algoritmo](negativo.py) responsável por criar o nega
 
 Para inverter a escala de cinza da imagem a seguinte função é utilizada:
 
-$s(r) = 255 - r$
+&nbsp;&nbsp;&nbsp;&nbsp; $s(r) = 255 - r$
 
 Essa transformação converterá pixels claros em escuros e pixels escuros em claros.
 

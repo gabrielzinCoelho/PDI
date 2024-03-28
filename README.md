@@ -8,4 +8,4 @@ Os conteudos teóricos são acompanhados de implementações práticas das técn
 
 1. [**Geração e Manipulação de Imagens**]()
 1. [**Funções de transformação de Intensidade Básicas**](transformacaoIntensidade)
-1. [**Processamento de Histogramas**]()
+1. [**Processamento de Histogramas**](processamentoHistograma)
