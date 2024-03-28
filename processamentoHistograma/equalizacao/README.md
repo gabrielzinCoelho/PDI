@@ -20,7 +20,7 @@ Sendo assim, baseado na teoria da probabilidade, podemos relacionar ambas FDP pe
 
 Pela função de distribuição cumulativa podemos definir:
 
-&nbsp;&nbsp;&nbsp;&nbsp; $s = T(r) = (L - 1) \left(\int_{0}^{r} p_r(w) dw \right)$
+&nbsp;&nbsp;&nbsp;&nbsp; $s = T(r) = (L - 1) \left(\int_{0}^{r} p_r(w)\ dw \right)$
 
 , onde $[0, L - 1]$ é o intervalo fechado de intensidades possíveis.
 
