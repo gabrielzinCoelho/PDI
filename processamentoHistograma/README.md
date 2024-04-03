@@ -17,6 +17,6 @@ A ideia por trás das técnicas de processamento de histogramas é aplicar, de f
 As funções baseadas em histogramas podem ser globais ou locais:
 
 * [Equalização de Histogramas](equalizacao)
-* [Especificação de Histogramas]()
+* [Especificação de Histogramas](especificacao)
 * [Realce Local]()
 
