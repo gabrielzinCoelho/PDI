@@ -4,6 +4,13 @@ Método utilizado para gerar uma imagem de saída a partir de uma determinada im
 
 O histograma passado como parâmetro pode ser definido de forma manual ou então a partir de uma imagem de referência similar a imagem de entrada mas com melhores condições de iluminação e contraste. Histogramas de imagens arbitrárias com características de coloração e constraste desejadas também podem ser passados como referência para moldar a imagem de saída.
 
+<p align="center">
+    <img src="./readmeImg/luna.jpg" width="300px" height="200px">
+    <img src="./readmeImg/luna_output.jpg" width="300px" height="200px">
+</p>
+
+Veja um exemplo em que a técnica de [especificação de histograma](luna) foi aplicada em uma imagem.
+
 ## Definição matemática
 
 A dedução da fórmula da função de transformação responsável pela especificação do histograma se baseia em duas funções de densidade de probabilidade (FDP): $p_r(r)$ e $p_z(z)$.
