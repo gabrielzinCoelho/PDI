@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-    <img src="./readmeImg/histogramas.jpg" width="300px" height="200px">
-    <img src="./readmeImg/histogramas_juntos.jpg" width="300px" height="200px">
+    <img src="./readmeImg/histogramas.jpg" width="400px" height="200px">
+    <img src="./readmeImg/histogramas_juntos.jpg" width="400px" height="200px">
 </p>
 
 ## Detalhes da implementação
