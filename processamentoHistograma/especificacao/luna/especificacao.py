@@ -1,5 +1,6 @@
 import numpy as np
 import cv2 as cv
+from matplotlib import pyplot as plt
 
 def calcHist(img):
     count = np.zeros(256, dtype="uint32")
@@ -21,10 +22,10 @@ def equalization(img):
         histEqualizated[k] = int(round(sum * 255))
     return histEqualizated
 
-imgInput = cv.imread("luna.jpg", 0)
+imgInput = cv.imread("assets/luna.jpg", 0)
 height, width = imgInput.shape
 
-imgReference = cv.imread("lunaReferencia.jpg", 0)
+imgReference = cv.imread("assets/lunaReferencia.jpg", 0)
 
 imgOutput = np.zeros((height, width), dtype="uint8")
 
@@ -55,3 +56,18 @@ cv.destroyAllWindows()
 cv.imshow("Especificacao Histograma", imgOutput)
 cv.waitKey(0)
 cv.destroyAllWindows()
+
+cv.imwrite("luna_output.jpg", imgOutput)
+
+plt.plot(range(256), inputToOutput, 'b')
+plt.show()
+plt.savefig("funcao_transformacao.jpg")
+plt.plot(range(256), referenceEqualization, 'g', referenceEqualization, range(256), 'b', range(256), range(256), 'r--')
+plt.show()
+plt.savefig("funcao_inversa.jpg")
+
+plt.hist(imgInput.ravel(), 256, [0, 256], color="g")
+plt.hist(imgReference.ravel(), 256, [0, 256], color="b")
+plt.hist(imgOutput.ravel(), 256, [0, 256], color="r")
+plt.show()
+

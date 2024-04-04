@@ -4,6 +4,13 @@ Transformação global dos níveis de cinza de uma imagem que visa aumentar o in
 
 A ideia é que a imagem resultante possua uma distribuição mais uniforme dos seus níveis de cinza.
 
+<p align="center">
+    <img src="./readmeImg/einsten.jpg" width="300px" height="200px">
+    <img src="./readmeImg/einsten_output.jpg" width="300px" height="200px">
+</p>
+
+Veja um exemplo em que a técnica de [equalização de histograma](einsten) foi aplicada em uma imagem.
+
 ## Definição matemática
 
 A dedução da fórmula da função de transformação $T(r)$ responsável pela equalização do histograma se baseia em duas funções de densidade de probabilidade (FDP): $p_r(r)$ e $p_s(s)$. 
