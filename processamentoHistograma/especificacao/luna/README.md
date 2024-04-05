@@ -40,8 +40,24 @@ Como abordado, em um mundo contínuo a equalização da imagem de entrada e da i
 
 Tal sequência de passos pode ser melhor entendida pelas seguintes igualdades:
 
-$T(r_k) = s_k = G(z_k)$, onde $r_k$ e $z_k$ são as intensidades da imagem de entrada e de saída, respectivamente, e $s_k$ é o valor para qual ambas convergem.
+$T(r_k) = s_k = G(z_k)$, onde $r_k$ e $z_k$ são as intensidades da imagem de entrada e de saída, respectivamente, $s_k$ é o valor para qual ambas convergem e $T(r_k)$ e $G(z_k)$ suas relativas funções de transformação. 
 
-Assim, o algorimo busca fazer o seguinte caminho:
+Assim, o algorimo busca fazer o seguinte caminho para a construção da imagem de saída:
 
-$r \rightarrow T(r_k) \rightarrow s_k \rightarrow G_{-1}(s_k) \rightarrow z_k$
+$r \rightarrow T(r_k) \rightarrow s_k \rightarrow G^{-1}(s_k) \rightarrow z_k$
+
+Porém, um ponto que deve ser levado em conta é que a discretização dos níveis de intensidade provoca um pequeno desvio entre os valores $s_k$ resultantes da aplicação de cada função de transformação. Assim, após fazer o mapeamento entre os valores de $r_k$ e $s_k$ e, também, de $z_k$ e $s_k$, o algoritmo busca fazer o mapeamento entre $r_k$ e $z_k$, por meio dos valores $s_k$ que intermediam essa associação. Nesse caso, para cada valor de s_k gerado pela função de transformação $T(r)$, o algoritmo busca assoaciá-lo ao valor de $s_k$ gerado pela função de transformação $G(z)$ mais próximo, e assim fazer o tabelamento entre os valores de intensidade das imagens de entrada e saída.
+
+```
+for i in range(256):
+    inputValue = i
+    eqInputValue = inputEqualization[i]
+
+    while(j < 255 and abs(int(eqInputValue) - int(referenceEqualization[j + 1])) <= abs(int(eqInputValue) - int(referenceEqualization[j]))):
+        j+=1
+    inputToOutput[inputValue] = j
+```
+
+Um aspecto interessante a ser ressaltado é que, como as funções de equalização se tratam de somatórios, o próximo valor da sequência sempre se trata de um valor maior ou igual ao anterior. Baseado nisso, para encontrar os valores de $s_k$ que mais se aproximam, o algoritmo apenas calcula o valor absoluto da diferença entre eles e compara com o valor da diferença calculada utilizando o elemento posterior da sequência, avançando sempre que essa diferença é inferior.
+
+Por fim, os valores de intensidade da imagem de entrada foram substituídos pelos seus respectivos valores apontados pela função de transformação final ($r_k \rightarrow z_k$ ) calculada.
