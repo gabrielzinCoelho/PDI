@@ -46,7 +46,7 @@ Assim, o algorimo busca fazer o seguinte caminho para a construção da imagem d
 
 $r_k \rightarrow T(r_k) \rightarrow s_k \rightarrow G^{-1}(s_k) \rightarrow z_k$
 
-Porém, um ponto que deve ser levado em conta é que a discretização dos níveis de intensidade provoca um pequeno desvio entre os valores $s_k$ resultantes da aplicação de cada função de transformação. Assim, após fazer o mapeamento entre os valores de $r_k$ e $s_k$ e, também, de $z_k$ e $s_k$, o algoritmo busca fazer o mapeamento entre $r_k$ e $z_k$, por meio dos valores $s_k$ que intermediam essa associação. Nesse caso, para cada valor de s_k gerado pela função de transformação $T(r)$, o algoritmo busca assoaciá-lo ao valor de $s_k$ gerado pela função de transformação $G(z)$ mais próximo, e assim fazer o tabelamento entre os valores de intensidade das imagens de entrada e saída.
+Porém, um ponto que deve ser levado em conta é que a discretização dos níveis de intensidade provoca um pequeno desvio entre os valores $s_k$ resultantes da aplicação de cada função de transformação. Assim, após fazer o mapeamento entre os valores de $r_k$ e $s_k$ e, também, de $z_k$ e $s_k$, o algoritmo busca fazer o mapeamento entre $r_k$ e $z_k$, por meio dos valores $s_k$ que intermediam essa associação. Nesse caso, para cada valor de $s_k$ gerado pela função de transformação $T(r)$, o algoritmo busca assoaciá-lo ao valor de $s_k$ gerado pela função de transformação $G(z)$ mais próximo, e assim fazer o tabelamento entre os valores de intensidade das imagens de entrada e saída.
 
 ```
 for i in range(256):
