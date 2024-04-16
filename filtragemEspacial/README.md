@@ -19,6 +19,7 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
     &nbsp;&nbsp;&nbsp;&nbsp; Considerando uma máscara de tamanho $m \ x \ n$, $m$ e $n$ podem ser definidos da seguinte forma:
 
     &nbsp;&nbsp;&nbsp;&nbsp; $m = 2a + 1$
+    
     &nbsp;&nbsp;&nbsp;&nbsp; $n = 2b + 1$
 
     &nbsp;&nbsp;&nbsp;&nbsp; , onde a e b são inteiros positivos.
