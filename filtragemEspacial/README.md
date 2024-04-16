@@ -19,20 +19,20 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
     &nbsp;&nbsp;&nbsp;&nbsp; Considerando uma máscara de tamanho $m \ x \ n$, $m$ e $n$ podem ser definidos da seguinte forma:
 
     &nbsp;&nbsp;&nbsp;&nbsp; $m = 2a + 1$
-    
+
     &nbsp;&nbsp;&nbsp;&nbsp; $n = 2b + 1$
 
     &nbsp;&nbsp;&nbsp;&nbsp; , onde a e b são inteiros positivos.
 
-    &nbsp;&nbsp;&nbsp;&nbsp; Sendo assim, a menor vizinhança/máscara possível é de tamanho $3 x 3$.
+    &nbsp;&nbsp;&nbsp;&nbsp; Sendo assim, a menor vizinhança/máscara possível é de tamanho $3 \ x \ 3$.
 
 * A imagem de saída, $g(x, y)$, pode ser definida da seguinte forma, considerando $f(x, y)$ a imagem de entrada e $w$ uma máscara qualquer de tamanho $3 x 3$:
     
     &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = w(-1, -1)f(x - 1, y - 1) +$ ... $w(0, 0)f(x, y) +$ ... $w(1, 1)f(x + 1, y + 1)$
 
-* Assim, pode-se definir a filtragem especial de uma imagem $f$ de tamanho $M x N$ com uma máscara de dimensões $m x n$, pela expressão genérica:
+* Assim, pode-se definir a filtragem especial de uma imagem $f$ de tamanho $M \ x \ N$ com uma máscara de dimensões $m \ x \ n$, pela expressão genérica:
 
-    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x + s, y + t)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $ g(x\text{,} y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s\text{,}  t)f(x + s\text{,}  y + t)$
 
 * Quando a máscara se aproxima das bordas de uma imagem, há o problema de algumas posições da máscara não possuírem pixels correspondentes para realizar a operação de filtragem. Nesse caso, existem 3 possibilidades para contornar isso, sendo a última delas a mais viável:
 
