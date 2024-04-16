@@ -16,22 +16,22 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
 
 * As máscaras possuem dimensões de tamanho ímpar (garantir que haja um ponto central).
 
-        Considerando uma máscara de tamanho $m \ x \ n$, $m$ e $n$ podem ser definidos da seguinte forma:
+    &nbsp;&nbsp;&nbsp;&nbsp; Considerando uma máscara de tamanho $m \ x \ n$, $m$ e $n$ podem ser definidos da seguinte forma:
 
-        $m = 2a + 1$
-        $n = 2b + 1$
+    &nbsp;&nbsp;&nbsp;&nbsp; $m = 2a + 1$
+    &nbsp;&nbsp;&nbsp;&nbsp; $n = 2b + 1$
 
-        , onde a e b são inteiros positivos.
+    &nbsp;&nbsp;&nbsp;&nbsp; , onde a e b são inteiros positivos.
 
-    Sendo assim, a menor vizinhança/máscara possível é de tamanho $3 x 3$.
+    &nbsp;&nbsp;&nbsp;&nbsp; Sendo assim, a menor vizinhança/máscara possível é de tamanho $3 x 3$.
 
 * A imagem de saída, $g(x, y)$, pode ser definida da seguinte forma, considerando $f(x, y)$ a imagem de entrada e $w$ uma máscara qualquer de tamanho $3 x 3$:
     
-    * $g(x, y) = w(-1, -1)f(x - 1, y - 1) +$ ... $w(0, 0)f(x, y) +$ ... $w(1, 1)f(x + 1, y + 1)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = w(-1, -1)f(x - 1, y - 1) +$ ... $w(0, 0)f(x, y) +$ ... $w(1, 1)f(x + 1, y + 1)$
 
 * Assim, pode-se definir a filtragem especial de uma imagem $f$ de tamanho $M x N$ com uma máscara de dimensões $m x n$, pela expressão genérica:
 
-    * $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x + s, y + t)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x + s, y + t)$
 
 * Quando a máscara se aproxima das bordas de uma imagem, há o problema de algumas posições da máscara não possuírem pixels correspondentes para realizar a operação de filtragem. Nesse caso, existem 3 possibilidades para contornar isso, sendo a última delas a mais viável:
 
@@ -43,9 +43,9 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
 
 * O processo de filtragem descrito acima, onde a máscara se move sobre cada pixel da imagem de entrada e define o valor do pixel de saída correspondente, é chamado de convolução. Porém, há um processo semelhante, mas que envolve o rotacionamento em $180^o$ da máscara definida.
 
-    * $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x - s, y - t)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x - s, y - t)$
 
-    Utilizando máscaras simétricas, o resultado obtido é o mesmo.
+    &nbsp;&nbsp;&nbsp;&nbsp; Utilizando máscaras simétricas, o resultado obtido é o mesmo.
 
 ## Tópicos Relacionados
 
