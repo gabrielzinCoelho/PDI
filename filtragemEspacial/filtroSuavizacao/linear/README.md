@@ -1,0 +1,2 @@
+# Filtros Lineares de Suavização
+
