@@ -32,7 +32,7 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
 
 * Assim, pode-se definir a filtragem especial de uma imagem $f$ de tamanho $M \ x \ N$ com uma máscara de dimensões $m \ x \ n$, pela expressão genérica:
 
-    &nbsp;&nbsp;&nbsp;&nbsp; $ g(x\text{,} y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s\text{,}  t)f(x + s\text{,}  y + t)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x + s, y + t)$
 
 * Quando a máscara se aproxima das bordas de uma imagem, há o problema de algumas posições da máscara não possuírem pixels correspondentes para realizar a operação de filtragem. Nesse caso, existem 3 possibilidades para contornar isso, sendo a última delas a mais viável:
 
@@ -42,9 +42,9 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
         * As novas linhas e colunas podem ser preenchidas com um determinado valor fixo.
         * Ou então, preenchidas por replicação, copiando os pixels da borda correspondente.
 
-* O processo de filtragem descrito acima, onde a máscara se move sobre cada pixel da imagem de entrada e define o valor do pixel de saída correspondente, é chamado de convolução. Porém, há um processo semelhante, mas que envolve o rotacionamento em $180^o$ da máscara definida.
+* O processo de filtragem descrito acima, onde a máscara se move sobre cada pixel da imagem de entrada e define o valor do pixel de saída correspondente, é chamado de convolução. Porém, há um processo semelhante, mas que envolve o rotacionamento em $180^o$ da máscara definida, chamado de correlação.
 
-    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum ._{s=-a}^{a} \ \sum ._{t=-b}^{b} \ w(s, t)f(x - s, y - t)$
+    &nbsp;&nbsp;&nbsp;&nbsp; $g(x, y) = \sum_{s=-a}^{a} \ \sum_{t=-b}^{b} \ w(s, t)f(x - s, y - t)$
 
     &nbsp;&nbsp;&nbsp;&nbsp; Utilizando máscaras simétricas, o resultado obtido é o mesmo.
 
