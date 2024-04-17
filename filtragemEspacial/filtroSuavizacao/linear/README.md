@@ -14,8 +14,8 @@ Exemplo de uma máscara $3 \ x \ 3$:
 
 | $\frac{1}{9}$ | $\frac{1}{9}$ | $\frac{1}{9}$ |
 |:-------------:|:-------------:|:-------------:|
-| $\frac{1}{9}$ | $\frac{1}{9}$ | $\frac{1}{9}$ <tr></tr>|
-| $\frac{1}{9}$ | $\frac{1}{9}$ | $\frac{1}{9}$ <tr></tr>|
+| $\frac{1}{9}$ | $\frac{1}{9}$ | $\frac{1}{9}$ |
+| $\frac{1}{9}$ | $\frac{1}{9}$ | $\frac{1}{9}$ |
 
 * Filtro da Média Ponderada
 
@@ -25,5 +25,5 @@ Exemplo de uma máscara $3 \ x \ 3$, em que os pixels da vizinhança-4 e o pixel
 
 | $\frac{1}{16}$ | $\frac{2}{16}$ | $\frac{1}{16}$ |
 |:--------------:|:--------------:|:--------------:|
-| $\frac{2}{16}$ | $\frac{4}{16}$ | $\frac{2}{16}$ <tr></tr>|
-| $\frac{1}{16}$ | $\frac{2}{16}$ | $\frac{1}{16}$ <tr></tr>|
+| $\frac{2}{16}$ | $\frac{4}{16}$ | $\frac{2}{16}$ |
+| $\frac{1}{16}$ | $\frac{2}{16}$ | $\frac{1}{16}$ |
