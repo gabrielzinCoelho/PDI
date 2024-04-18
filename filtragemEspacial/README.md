@@ -51,5 +51,5 @@ A filtragem cria um novo pixel com coordenadas iguais ao do centro de vizinhanç
 ## Tópicos Relacionados
 
 * [**Filtros Espaciais de Suavização**](filtroSuavizacao)
-* [**Filtros Espaciais de Realce para Arestas**]()
+* [**Filtros Espaciais de Realce para Arestas**](filtroRealce)
 * [**Combinando Métodos de Realce Espacial**]()
