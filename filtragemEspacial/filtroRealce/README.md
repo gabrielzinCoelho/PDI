@@ -19,9 +19,9 @@ grandes em intervalo pequeno de pixels).
 
 Apesar de, como dito anteriormente, imagens serem funções de natureza bidimensional, vamos tomar como base a definição das derivadas de primeira e segunda ordem para uma função unidimensional. Isso significa interpretar as variações de intensidade em uma única linha ou coluna, por exemplo.
 
-$ f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
+$f'(x) = \displaystyle \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
 
-$ f''(x) = \lim_{h \to 0} \frac{f(x + h) + f(x - h) - 2f(x)}{h^{2}}$
+$f''(x) = \displaystyle \lim_{h \to 0} \frac{f(x + h) + f(x - h) - 2f(x)}{h^{2}}$
 
 Porém, como imagens possuem valores discretos de posição, o menor valor que $h$ pode assumir ao tender a 0 é 1.
 
@@ -29,7 +29,7 @@ Assim, podemos reescrever as funções acima da seguinte forma:
 
 $f'(x) =  f(x + 1) - f(x)$
 
-$f \text{''} (x) =  f(x + 1) + f(x - 1) - 2f(x)$
+$f''(x) =  f(x + 1) + f(x - 1) - 2f(x)$
 
 
 ### Comportamento esperado das derivadas
