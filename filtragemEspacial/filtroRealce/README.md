@@ -11,16 +11,17 @@ Dessa forma, o comportamento das derivadas pode ser abordado em duas situações
 * início e fim de descontinuidades (degraus e rampas)
 
 ```
-Rampas são descontinuidades graduais de intensidade, enquanto degraus são descontinuidades abruptas (variações grandes em intervalo pequeno de pixels). 
+Rampas são descontinuidades graduais de intensidade, enquanto degraus são descontinuidades abruptas (variações 
+grandes em intervalo pequeno de pixels). 
 ```
 
 ## Definição Matemática
 
 Apesar de, como dito anteriormente, imagens serem funções de natureza bidimensional, vamos tomar como base a definição das derivadas de primeira e segunda ordem para uma função unidimensional. Isso significa interpretar as variações de intensidade em uma única linha ou coluna, por exemplo.
 
-$ f'(x) = \displaystyle \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
+$ f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$
 
-$ f''(x) = \displaystyle \lim_{h \to 0} \frac{f(x + h) + f(x - h) - 2f(x)}{h^{2}}$
+$ f''(x) = \lim_{h \to 0} \frac{f(x + h) + f(x - h) - 2f(x)}{h^{2}}$
 
 Porém, como imagens possuem valores discretos de posição, o menor valor que $h$ pode assumir ao tender a 0 é 1.
 
