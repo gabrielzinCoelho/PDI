@@ -27,9 +27,9 @@ Porém, como imagens possuem valores discretos de posição, o menor valor que $
 
 Assim, podemos reescrever as funções acima da seguinte forma:
 
-$ f\text{'}(x) =  f(x + 1) - f(x)$
+$f'(x) =  f(x + 1) - f(x)$
 
-$ f\text{''}(x) =  f(x + 1) + f(x - 1) - 2f(x)$
+$f \text{''} (x) =  f(x + 1) + f(x - 1) - 2f(x)$
 
 
 ### Comportamento esperado das derivadas
