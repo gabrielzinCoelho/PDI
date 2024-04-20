@@ -28,7 +28,7 @@ No entanto, observe que os pixels nas diagonais da máscara possuem peso 0 e por
 | $1$ | $-8$ | $1$ |
 | $1$ | $1$ | $1$ |
 
-## Aplicações do Filtro
+## Aplicação do Filtro
 
 O Filtro Laplaciano tende a produzir imagens com arestas e outras descontinuidades de intensidade na cor cinzenta (quanto maior a discontinuidade, mais próxima de branco) em contraste com um fundo preto sem características (regiões com baixa variação de intensidade na imagem original e portanto derivada próxima de 0).
 
