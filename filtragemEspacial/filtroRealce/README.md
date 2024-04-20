@@ -1,5 +1,8 @@
 # Filtros Espaciais de Realce para Arestas
 
+* [**Filtro Laplaciano**](laplaciano)
+* [**Filtro Gradiente**]()
+
 Ao contrário dos filtros de suavização, os filtros de realce para arestas buscam evidenciar transições de intensidade em imagens.
 
 Essas transições podem ser determinadas e medidas pelo uso de derivadas. Nesse caso, vale lembrar que imagens são funções bidimensionais que associam a cada posição (x, y), no domínio, um valor f(x, y), no contradomínio. Assim, a intensidade da derivada calculada em um ponto é proporcional ao grau de descontinuidade de intensidade na imagem naquele ponto.
@@ -42,4 +45,11 @@ Sendo assim, esse comportamento traz algumas implicações:
 
 * Derivadas de primeira ordem produzem bordas mais grossas
 
+* Derivadas de segunda ordem possuem resposta mais forte a detalhes finos, como ruídos e linhas finas
+
+* Derivadas de segunda ordem produzem bordas duplas em transições de intensidade devido à sua ativação apenas no início e fim de rampas e degraus
+
+* Os sinais das derivadas (especialmente de segunda ordem) podem ser utilizados para determinar se a transição foi de uma área mais clara para uma mais escura e vice-versa.
+
+É comum que arestas em imagens digitais se comportem como rampas com inclinação constante. Sendo assim, a primeira derivada resulta em arestas grossas, pois assume um valor constante e diferente de zero, enquanto a segunda derivada produz arestas duplas com um pixel de largura, separada por zeros.
 
