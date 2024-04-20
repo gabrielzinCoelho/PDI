@@ -8,7 +8,7 @@ O filtro Laplaciano é linear (pode ser representado em uma máscara de filtrage
 
 O Filtro Laplaciano é baseado no cálculo do vetor gradiente de segunda ordem.
 
-$\nabla^{2}f = frac{\partial^{2}f}{\partial x^{2}} + frac{\partial^{2}f}{\partial y^{2}}$
+$\nabla^{2}f = \frac{\partial^{2}f}{\partial x^{2}} + \frac{\partial^{2}f}{\partial y^{2}}$
 
 $\frac{\partial^{2}f}{\partial x^{2}} = f(x + 1, y) + f(x - 1, y) - 2f(x, y)$
 
