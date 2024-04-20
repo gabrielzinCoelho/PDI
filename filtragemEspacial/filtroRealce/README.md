@@ -1,7 +1,7 @@
 # Filtros Espaciais de Realce para Arestas
 
 * [**Filtro Laplaciano**](laplaciano)
-* [**Filtro Gradiente**]()
+* [**Filtro Gradiente**](gradiente)
 
 Ao contrário dos filtros de suavização, os filtros de realce para arestas buscam evidenciar transições de intensidade em imagens.
 
