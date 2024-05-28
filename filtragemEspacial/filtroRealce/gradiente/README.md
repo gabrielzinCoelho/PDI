@@ -46,5 +46,3 @@ O que resulta em duas máscaras, chamadas de **Operadores de Sobel**, uma para d
 |:---:|:---:|:---:|
 | $-2$ | $0$ | $2$ |
 | $-1$ | $0$ | $1$ |
-
-## Aplicação do Filtro
