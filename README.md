@@ -10,3 +10,4 @@ Os conteudos teóricos são acompanhados de implementações práticas das técn
 1. [**Funções de transformação de Intensidade Básicas**](transformacaoIntensidade)
 1. [**Processamento de Histogramas**](processamentoHistograma)
 1. [**Filtragem Espacial**](filtragemEspacial)
+1. [**Filtragem no Domínio da Frequência**](filtragemFrequencia)
