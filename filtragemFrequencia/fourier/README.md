@@ -29,7 +29,7 @@ Os vetores rotativos mostrados acima podem ser descritos como coordenadas no pla
 
 Um número complexo $z$ pode ser escrito na forma: $z = x + iy$. No qual x é sua parte real, y a parte imaginária e $i = \sqrt{-1}$ a unidade imaginária.
 
-No plano complexo, o eixo horizontal representa a parte real e o eixo vertical a parte imaginária de um determinado número, assim, o número complexo  $z = x + iy pode ser representado como um vetor a partir da origem até o ponto $(x,y)$.
+No plano complexo, o eixo horizontal representa a parte real e o eixo vertical a parte imaginária de um determinado número, assim, o número complexo  $z = x + iy$ pode ser representado como um vetor a partir da origem até o ponto $(x,y)$.
 
 Além disso, um número complexo pode ser definido por meio de suas coordenadas polares:
 
@@ -37,9 +37,9 @@ $z = r(cos\theta + isen\theta)$
 
 $z = re^{i\theta}$
 
-Ou então, $z = e^{i\theta}$, para um círculo unitário.
+ou então, $z = e^{i\theta}$, para um círculo unitário,
 
-Tendo em vista a fórmula de Euler: $e^{i\theta} = cos\theta + isen\theta$.
+tendo em vista a fórmula de Euler: $e^{i\theta} = cos\theta + isen\theta$.
 
 Logo, considerando um círculo unitário, $cos\theta$ e $isen\theta$ são as coordenadas $x$ e $y$ do ponto presente na extremidade desse círculo. Assim, o movimento do ponto $z$ ao longo da circunferência, conforme $\theta$ varia, é descrito pelas funções seno (parte imaginária) e cosseno (parte real).
 
@@ -78,3 +78,45 @@ Assim, qualquer função que dado um parâmetro real $t$ leva a um número compl
 <p align="center">
     <img src="./readmeImg/fourier_series_terms.png" width="432px" height="219px">
 </p>
+
+### Constantes complexas
+
+Até o momento chegamos ao entendimento que a Série de Fourier nos permite analisar um sinal periódico no domínio real (intensidade x tempo, por exemplo) e convertê-lo para o domínio da frequência. Assim, um sinal periódico qualquer pode ser dissecado em termo de suas componentes harmônicas, ondas seno e cosseno.
+
+Essa análise do sinal por meio de ondas seno e cosseno se utiliza da descrição de vetores rotativos no plano complexo, onde as coordenadas polares desse vetor, à medida que o mesmo se movimenta ao longo do tempo, determinam o formato de tais ondas harmônicas. Vimos, também, que a fórmula genérica para representação desses vetores é:
+
+$c_{n} . e^{n . 2{\pi}it}$
+
+, na qual a fórmula de Euler nos permite reescrever as coordenadas polares de um vetor rotativo:
+
+$e^{i\theta} = cos\theta + isen\theta$
+
+$z = r(cos\theta + isen\theta) = re^{i\theta}$
+
+Portanto, a grande questão ao aplicar a Série de Fourier se trata de determinar quais as constantes complexas que acompanham cada um dos vetores rotativos, onde cada vetor rotativo está associado a uma determinada frequência de sinal.
+
+#### Constante $c_0$
+
+Vamos começar pela constante $c_0$. Ela esta associada ao vetor rotativo de frequência nula, ou seja, se trata de um vetor constante. Geometricamente, esse vetor representa o centro de massa, ou valor médio, da função ao longo de um período $T$.
+
+Isso significa que se você amostrasse diversos pontos da função ao longo do período e calculasse o valor médio dos mesmos o valor obtido se aproximaria de $c_0$. Assim, no limite em que o número de pontos amostrados tende ao infito esse resultado se torna exatamente o valor da constante $c_0$. Ou seja, essa soma dos valores amostrados de $f(t)$, no limite, se trata de uma integral e, então, o resultado obtido é dividido pelo número de pontos amostrados, que, nesse caso, se trata do período $T$.
+
+$c_0 = \frac{1}{T} \int_{0}^{T} f(t) dt$
+
+A ideia intuitiva por trás desse cálculo se deve ao fato do vetor constante ser o único que contribui de fato para a soma total dos pontos amostrados da função. Isso ocorre devido ao fato do mesmo não ser afetado pelas oscilações, ao contrário dos demais vetores. As componentes oscilatórias da Série de Fourier realizam números inteiros de ciclos ao longo do período $T$, sendo assim, a soma de seus valores ao longo do período, inevitavelmente, se anulam, resultando no fato de sua contribuição líquida ser nula.
+
+<p align="center">
+    <img src="./readmeImg/complex_constant.png" width="432px" height="219px">
+</p>
+
+#### Demais contantes
+
+O truque para obter as demais contantes é fazer uma manipulação para que o cálculo utilizado na constante $c_0$ possa ser aplicado nas mesmas: basta multiplicar, para cada constante $c_n$, a função $f(t)$ por $e^{-n . 2{\pi}it}$.
+
+Assim, o produto $f(t) x e^{-n . 2{\pi}it}$ é responsável por neutralizar o movimento de rotação do vetor rotativo associado a constante $c_n$, ao zerar sua frequência. Todas os demais vetores são afetados e possuem suas frequências reduzidas em $n Hz$.
+
+Ou seja, é como se o vetor rotativo associado a constante $c_n$ passasse a ser constante e então, ao se tornar imóvel, ele se torna o novo valor médio da função obtida ao longo de um período $T$.
+
+Isso pode ser expresso de forma genérica:
+
+$c_n = \frac{1}{T} \int_{0}^{T} f(t) .  e^{-n . 2{\pi}it} dt$
