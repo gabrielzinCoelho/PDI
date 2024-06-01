@@ -152,10 +152,28 @@ Assim, para representar cada função harmônica constituinte do sinal periódic
 
 Dessa forma, para cada função harmônica presente no sinal periódico original $f(t)$, temos:
 
-$f(t) = Acos(2{\pi}nt) + Bsen(2{\pi}nt = (\frac{A}{2} + \frac{B}{2i})e^{n . 2{\pi}it} + (\frac{A}{2} - \frac{B}{2i})e^{-n . 2{\pi}it}$
+$f(t) = Acos(2{\pi}nt) + Bsen(2{\pi}nt) = (\frac{A}{2} + \frac{B}{2i})e^{n . 2{\pi}it} + (\frac{A}{2} - \frac{B}{2i})e^{-n . 2{\pi}it}$
 
 $c_n = \frac{A}{2} + \frac{B}{2i}$
 
 $c_{-n} = \frac{A}{2} - \frac{B}{2i}$
 
-A soma de uma onda seno e uma onda cosseno com a mesma frequência resulta em uma nova onda que é uma combinação linear das duas, a qual possui a mesma frequência, mas uma amplitude e uma fase diferentes. 
+A soma de uma onda seno e uma onda cosseno com a mesma frequência resulta em uma nova onda que é uma combinação linear das duas, a qual possui a mesma frequência, mas uma amplitude e uma fase diferentes.
+
+### Conclusão
+
+Portano, baseado em toda a fundamentação teórica acima, a Série de Fourier pode ser definida como:
+
+$f(t) = a_0 + \sum ._{n=1}^{\infty} (a_n cos (\frac{2{\pi}nt}{T}) + b_n ssen (\frac{2{\pi}nt}{T}))$
+
+$a_0 = \frac{1}{T} \int_{0}^{T} f(t) dt$
+
+$a_n = \frac{2}{T} \int_{0}^{T} f(t) cos (\frac{2{\pi}nt}{T}) dt$
+
+$b_n = \frac{2}{T} \int_{0}^{T} f(t) sen (\frac{2{\pi}nt}{T}) dt$
+
+Ou, então, utilizando exponencias complexas:
+
+$f(t) = \sum ._{n=-\infty}^{\infty} c_n e^{n . 2{\pi}it}$
+
+$c_n = \frac{1}{T} \int_{0}^{T} f(t) .  e^{-n . 2{\pi}it} dt$
