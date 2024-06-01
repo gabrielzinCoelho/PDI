@@ -4,7 +4,7 @@
 
 Se a posição vertical de um ponto na extremidade de um círculo girando com uma frequência constante fosse traçado ao longo do tempo, o resultado obtido é uma onda senoidal com frequência igual à do movimento circular da partícula e amplitude igual ao raio da circunferência.
 
-O mesmo vale para ondas cossenoidais, que podem ser entendidas como ondas seno deslocadas $\frac{\pi}{2}$ posições no eixo horizontal.
+O mesmo vale para ondas cossenoidais, que podem ser entendidas como ondas seno deslocadas $\frac{\pi}{2}$ radianos no eixo horizontal.
 
 <p align="center">
     <img src="./readmeImg/circle_sin.gif" width="432px" height="219px">
@@ -51,7 +51,7 @@ A exponencial complexa $e^{n . 2{\pi}it}$ é o termo mais importante da Série d
 
 Pode ser entendida como uma forma de descrever o movimento dos vetores rotativos ao longo do tempo $t$, onde n determina a frequência angular do vetor.
 
-Assim, um vetor constante representado pelo ponto no plano constante $z = 1 + i0$ pode ser descrito por $e^{0 . 2{\pi}it}$, ou, então, um vetor que gira no sentido anti-horário com 2 ciclos por segundo, por $e^{-2 . 2{\pi}it}$.
+Assim, um vetor constante representado pelo ponto no plano constante $z = 1 + i0$ pode ser descrito por $e^{0 . 2{\pi}it}$, ou, então, um vetor que gira no sentido horário com 2 ciclos por segundo, por $e^{-2 . 2{\pi}it}$.
 
 <p align="center">
     <img src="./readmeImg/complex_exponential.png" width="432px" height="219px">
@@ -120,3 +120,42 @@ Ou seja, é como se o vetor rotativo associado a constante $c_n$ passasse a ser 
 Isso pode ser expresso de forma genérica:
 
 $c_n = \frac{1}{T} \int_{0}^{T} f(t) .  e^{-n . 2{\pi}it} dt$
+
+
+### Vetores com Frequências Opostas
+
+Vetores rotativos podem ser descritos no plano complexo através da notação utilizando exponenciais complexas da seguinte forma: $e^{n . 2{\pi}it}$, onde $n$ é a frequência em $Hz$ e $t$ é o tempo.
+
+Ou seja, para o par de vetores com frequências opostas, $+n$ e $-n$, tem-se as seguintes notações: $e^{n . 2{\pi}it}$ e $e^{-n . 2{\pi}it}$.
+
+Esses termos podem ser associados a funções seno e cosseno da seguinte forma:
+
+$e^{n . 2{\pi}it} = cos (n . 2{\pi}t) + isen (n . 2{\pi}t)$
+
+$e^{-n . 2{\pi}it} = cos (n . 2{\pi}t) - isen (n . 2{\pi}t)$
+
+Ao somar e subtrair estas expressões, podemos extrair as funções seno e cosseno:
+
+$e^{n . 2{\pi}it} + e^{-n . 2{\pi}it} = 2cos (n . 2{\pi}t)$
+
+$e^{n . 2{\pi}it} - e^{-n . 2{\pi}it} = 2isen (n . 2{\pi}t)$
+
+Logo, as funções seno e cosseno podem ser definidas como:
+
+$cos (n . 2{\pi}t) = \frac{e^{n . 2{\pi}it} + e^{-n . 2{\pi}it}}{2}$
+
+$sen (n . 2{\pi}t) = \frac{e^{n . 2{\pi}it} - e^{-n . 2{\pi}it}}{2i}$
+
+Suas somas e subtrações resultam em componentes reais (cosseno) e imaginárias (seno) que oscilam com o tempo.
+
+Assim, para representar cada função harmônica constituinte do sinal periódico em questão, são utilizados dois vetores rotativos, um com frequência $n$ e o outro com frequência $-n$. A soma destes dois vetores rotativos cria uma onda estacionária que oscila em uma única direção, formando uma função seno ou cosseno.
+
+Dessa forma, para cada função harmônica presente no sinal periódico original $f(t)$, temos:
+
+$f(t) = Acos(2{\pi}nt) + Bsen(2{\pi}nt = (\frac{A}{2} + \frac{B}{2i})e^{n . 2{\pi}it} + (\frac{A}{2} - \frac{B}{2i})e^{-n . 2{\pi}it}$
+
+$c_n = \frac{A}{2} + \frac{B}{2i}$
+
+$c_{-n} = \frac{A}{2} - \frac{B}{2i}$
+
+A soma de uma onda seno e uma onda cosseno com a mesma frequência resulta em uma nova onda que é uma combinação linear das duas, a qual possui a mesma frequência, mas uma amplitude e uma fase diferentes. 
