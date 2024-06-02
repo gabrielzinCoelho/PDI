@@ -2,11 +2,11 @@
 
 ## Referências
 
-* [Fourier Transforms || Theoretical Interpretations, Complex Exponentials and Window Effect](www.youtube.com/watch?v=3qnFjeqPFX4)
-* [But what is a Fourier series? From heat flow to drawing with circles | DE4](www.youtube.com/watch?v=r6sGWTCMz2k)
-* [But what is the Fourier Transform? A visual introduction.](www.youtube.com/watch?v=spUNpyF58BY)
-* [The Remarkable Story Behind The Most Important Algorithm Of All Time](www.youtube.com/watch?v=nmgFG7PUHfo)
-* [The Fourier Series and Fourier Transform Demystified](www.youtube.com/watch?v=mgXSevZmjPc)
+* [Fourier Transforms || Theoretical Interpretations, Complex Exponentials and Window Effect](https://www.youtube.com/watch?v=3qnFjeqPFX4)
+* [But what is a Fourier series? From heat flow to drawing with circles | DE4](https://www.youtube.com/watch?v=r6sGWTCMz2k)
+* [But what is the Fourier Transform? A visual introduction.](https://www.youtube.com/watch?v=spUNpyF58BY)
+* [The Remarkable Story Behind The Most Important Algorithm Of All Time](https://www.youtube.com/watch?v=nmgFG7PUHfo)
+* [The Fourier Series and Fourier Transform Demystified](https://www.youtube.com/watch?v=mgXSevZmjPc)
 
 ## Série de Fourier
 
