@@ -1,5 +1,13 @@
 # Transformada de Fourier
 
+## Referências
+
+* [Fourier Transforms || Theoretical Interpretations, Complex Exponentials and Window Effect](youtube.com/watch?v=3qnFjeqPFX4)
+* [But what is a Fourier series? From heat flow to drawing with circles | DE4](youtube.com/watch?v=r6sGWTCMz2k)
+* [But what is the Fourier Transform? A visual introduction.](youtube.com/watch?v=spUNpyF58BY)
+* [The Remarkable Story Behind The Most Important Algorithm Of All Time](youtube.com/watch?v=nmgFG7PUHfo)
+* [The Fourier Series and Fourier Transform Demystified](youtube.com/watch?v=mgXSevZmjPc)
+
 ## Série de Fourier
 
 Se a posição vertical de um ponto na extremidade de um círculo girando com uma frequência constante fosse traçado ao longo do tempo, o resultado obtido é uma onda senoidal com frequência igual à do movimento circular da partícula e amplitude igual ao raio da circunferência.
@@ -113,7 +121,7 @@ A ideia intuitiva por trás desse cálculo se deve ao fato do vetor constante se
 
 O truque para obter as demais contantes é fazer uma manipulação para que o cálculo utilizado na constante $c_0$ possa ser aplicado nas mesmas: basta multiplicar, para cada constante $c_n$, a função $f(t)$ por $e^{-n . 2{\pi}it}$.
 
-Assim, o produto $f(t) x e^{-n . 2{\pi}it}$ é responsável por neutralizar o movimento de rotação do vetor rotativo associado a constante $c_n$, ao zerar sua frequência. Todas os demais vetores são afetados e possuem suas frequências reduzidas em $n Hz$.
+Assim, o produto $f(t) . e^{-n . 2{\pi}it}$ é responsável por neutralizar o movimento de rotação do vetor rotativo associado a constante $c_n$, ao zerar sua frequência. Todas os demais vetores são afetados e possuem suas frequências reduzidas em $n Hz$.
 
 Ou seja, é como se o vetor rotativo associado a constante $c_n$ passasse a ser constante e então, ao se tornar imóvel, ele se torna o novo valor médio da função obtida ao longo de um período $T$.
 
@@ -150,9 +158,9 @@ Suas somas e subtrações resultam em componentes reais (cosseno) e imaginárias
 
 Assim, para representar cada função harmônica constituinte do sinal periódico em questão, são utilizados dois vetores rotativos, um com frequência $n$ e o outro com frequência $-n$. A soma destes dois vetores rotativos cria uma onda estacionária que oscila em uma única direção, formando uma função seno ou cosseno.
 
-Dessa forma, para cada função harmônica presente no sinal periódico original $f(t)$, temos:
+Dessa forma, para cada função harmônica $g(t)$ presente no sinal periódico original, temos:
 
-$f(t) = Acos(2{\pi}nt) + Bsen(2{\pi}nt) = (\frac{A}{2} + \frac{B}{2i})e^{n . 2{\pi}it} + (\frac{A}{2} - \frac{B}{2i})e^{-n . 2{\pi}it}$
+$g(t) = Acos(2{\pi}nt) + Bsen(2{\pi}nt) = (\frac{A}{2} + \frac{B}{2i})e^{n . 2{\pi}it} + (\frac{A}{2} - \frac{B}{2i})e^{-n . 2{\pi}it}$
 
 $c_n = \frac{A}{2} + \frac{B}{2i}$
 
