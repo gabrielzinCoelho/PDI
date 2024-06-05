@@ -10,7 +10,7 @@ No caso da análise de imagens no espaço de Fourier, vale ressaltar que estamos
 
 ## K-Space
 
-A Transformada de Fourier Bidimensional (FT-2D) implica que imagens podem ser formadas pela combinação linear das várias senoides que as compõe.
+A Transformada de Fourier Bidimensional (FT-2D) implica que imagens podem ser formadas pela combinação linear das várias senoides bidimensionais que as compõe.
 
 Isso pode ser facilmente observado pelas seguintes demonstrações:
 
@@ -56,6 +56,10 @@ $A = |F(\mu)| = \sqrt{{Re\{F(\mu)\}}^{2} + {jIm\{F(\mu)\}}^{2}}$
 
 $\theta = arctan(\frac{jIm\{F(\mu)\}}{Re\{F(\mu)\}})$
 
+<p align="center">
+    <img src="./readmeImg/FT_1D.jpg" width="432px" height="250px">
+</p>
+
 ## FT-2D e K-Space
 
 O entendimento da saída produzida pela Transformada de Fourier unidimensional pode ser estendido para a Transformada de Fourier Bidimensional, e é nesse momento que o K-Space revela-se importante.
@@ -66,6 +70,15 @@ No caso da FT-2D podemos definir:
 
 $F({\mu}, {\nu}) = \int_{-{\infty}}^{\infty} \int_{-{\infty}}^{\infty} f(x, y) . e^{-j2{\pi}({\mu}x + {\nu}y)} dxdy$
 
-Dessa forma, as variáveis ${\mu}$ e ${\nu}$ no K-Space correspondem as frequências horizontais e verticais, respectivamente, e, para cada coordenada $({\mu}, {\nu})$ há um número complexo $F({\mu}, {\nu})$ que armazena a amplitude e fase dessa frequência em específico. De forma grosseira pode-se dizer que cada ponto $({\mu}, {\nu})$ no K-Space representa uma frequência específica que pode compor a imagem.
+<p align="center">
+    <img src="./readmeImg/FT_2D.jpg" width="432px" height="200px">
+</p>
+
+Dessa forma, as variáveis ${\mu}$ e ${\nu}$ no K-Space correspondem as frequências horizontais e verticais, respectivamente, e, para cada coordenada $({\mu}, {\nu})$ há um número complexo $F({\mu}, {\nu})$ que armazena a amplitude e fase dessa frequência em específico. De forma grosseira, pode-se dizer que cada ponto $({\mu}, {\nu})$ no K-Space representa uma frequência específica que pode compor a imagem.
 
 Vale ressaltar que as representações de Transformadas de Fourier de imagens, geralmente, mostram apenas a magnitude dos vetores (os quais representam os números complexos de saída da função) associados a cada frequência. Isso se deve a dificuldade de representar números complexos no $R^{3}$. No entanto, a fase associada a cada frequência desempenha papel tão importante quanto para descrever as senóides que compõe o sinal. Sendo assim, para aplicar a Transformada de Fourier inversa, e reconstruir a imagem original, ambas informações devem ser preservadas.
+
+<p align="center">
+    <img src="./readmeImg/k_space_1.jpg" width="432px" height="250px">
+    <img src="./readmeImg/k_space_2.jpg" width="432px" height="250px">
+</p>
