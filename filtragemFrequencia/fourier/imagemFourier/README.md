@@ -21,19 +21,19 @@ Isso pode ser facilmente observado pelas seguintes demonstrações:
 
 Senoides com domínio definido no $R²$ podem ser definidas da seguinte forma:
 
-$f(x, y) = Asen(k{x}x + k_{y}y + \phi)$
+$f(x, y) = Asen(k_{x}x + k_{y}y + \phi)$
 
 * A: amplitude 
 * $\phi$: fase (deslocamento da onda ao longo do eixo $x$ e $y$)
-* $k{x} e k{y}$: constantes de frequência da onda
+* $k_{x} e k_{y}$: constantes de frequência da onda
 
-As constantes $k{x}$ e $k{y}$ determinam a direção de propagação da onda no plano $xy$.
+As constantes $k_{x}$ e $k_{y}$ determinam a direção de propagação da onda no plano $xy$.
 
-* Para $k{x} = 0$ e $k{y} \neq 0$ a onda se propaga na direção do eixo $y$.
-* Para $k{x} \neq 0$ e $k{y} = 0$ a onda se propaga na direção do eixo $x$.
-* Para $k{x} = k{y}$ a onda se propaga na direção $x = y$ ($45^{o}$).
+* Para $k_{x} = 0$ e $k_{y} \neq 0$ a onda se propaga na direção do eixo $y$.
+* Para $k_{x} \neq 0$ e $k_{y} = 0$ a onda se propaga na direção do eixo $x$.
+* Para $k_{x} = k_{y}$ a onda se propaga na direção $x = y$ ($45^{o}$).
 
-Além disso, a magnitude do vetor $k = k{x} + k{y}$ indica a frequência da onda.
+Além disso, a magnitude do vetor $k = k_{x} + k_{y}$ indica a frequência da onda.
 
 Confira a demonstração de como uma senóide bidimensional se propaga na superfície: [Two-dimensional plane wave visualisation](https://www.youtube.com/watch?v=C2k-SEdiihs)
 
