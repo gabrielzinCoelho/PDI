@@ -71,7 +71,7 @@ No caso da FT-2D podemos definir:
 $F({\mu}, {\nu}) = \int_{-{\infty}}^{\infty} \int_{-{\infty}}^{\infty} f(x, y) . e^{-j2{\pi}({\mu}x + {\nu}y)} dxdy$
 
 <p align="center">
-    <img src="./readmeImg/FT_2D.jpg" width="432px" height="200px">
+    <img src="./readmeImg/FT_2D.svg" width="432px" height="200px">
 </p>
 
 Dessa forma, as variáveis ${\mu}$ e ${\nu}$ no K-Space correspondem as frequências horizontais e verticais, respectivamente, e, para cada coordenada $({\mu}, {\nu})$ há um número complexo $F({\mu}, {\nu})$ que armazena a amplitude e fase dessa frequência em específico. De forma grosseira, pode-se dizer que cada ponto $({\mu}, {\nu})$ no K-Space representa uma frequência específica que pode compor a imagem.
