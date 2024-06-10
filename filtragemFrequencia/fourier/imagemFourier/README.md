@@ -97,7 +97,7 @@ $F(u, v) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y) . e^{-j2{\pi}(\frac{ux}
 
 $F(0, 0)$ é a componente DC do espectro e é dado por:
 
-$F(0, 0) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y)$
+$F(0, 0) = {\sum} ._{x=0}^{M-1} {\sum} ._{y=0}^{N-1} f(x, y)$
 
 ### Conjugado Simétrico
 
