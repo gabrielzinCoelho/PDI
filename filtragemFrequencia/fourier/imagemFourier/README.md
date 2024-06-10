@@ -43,7 +43,7 @@ Quando a Transformada de Fourier é aplicada a um sinal que se propaga em apenas
 
 $F(\mu) = \int_{-{\infty}}^{\infty} f(t) . e^{-j2{\pi}{\mu}t} dt$
 
-Ou seja, a função $F(\mu)$ decompõe o sinal em uma soma (integral) de senóides de diferentes frequências, cada uma com amplitude e fase específicas, permitindo entender como o sinal esta distriuído entre as várias frequências. Assim, para cada frequência $\mu$ há um número complexo $F(\mu)$ associado, o qual armazena tanto a informação da amplitude, quanto da fase, da senóide associada a essa frequência.
+Ou seja, a função $F(\mu)$ decompõe o sinal em uma soma (integral) de senóides de diferentes frequências, cada uma com amplitude e fase específicas, permitindo entender como o sinal esta distribuído entre as várias frequências. Assim, para cada frequência $\mu$ há um número complexo $F(\mu)$ associado, o qual armazena tanto a informação da amplitude, quanto da fase, da senóide associada a essa frequência.
 
 $F(\mu) = A(\mu) . e^{j{\theta}(\mu)}$
 
@@ -60,7 +60,7 @@ $\theta = arctan(\frac{jIm\{F(\mu)\}}{Re\{F(\mu)\}})$
     <img src="./readmeImg/FT_1D.jpg" width="432px" height="250px">
 </p>
 
-## FT-2D e K-Space
+### FT-2D e K-Space
 
 O entendimento da saída produzida pela Transformada de Fourier unidimensional pode ser estendido para a Transformada de Fourier Bidimensional, e é nesse momento que o K-Space revela-se importante.
 
@@ -81,4 +81,52 @@ Vale ressaltar que as representações de Transformadas de Fourier de imagens, g
 <p align="center">
     <img src="./readmeImg/k_space_1.jpg" width="432px" height="250px">
     <img src="./readmeImg/k_space_2.jpg" width="432px" height="250px">
+   
 </p>
+
+<p align="center">
+    <img src="./readmeImg/k_space_3.png" width="432px" height="278px">
+    <img src="./readmeImg/k_space_4.png" width="432px" height="278px">
+</p>
+
+## Propriedades da Transformada de Fourier (DFT-2D)
+
+$F(u, v) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y) . e^{-j2{\pi}(\frac{ux}{M} + \frac{vy}{N})}$
+
+### Componente DC do Espectro
+
+$F(0, 0)$ é a componente DC do espectro e é dado por:
+
+$F(0, 0) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y)$
+
+### Conjugado Simétrico
+
+Se $f(x, y)$ é real a FT dessa função é conjugada simétrica, ou seja:
+
+$F(u, v) = F(-u, -v)$
+
+O espectro da FT também é simétrico:
+
+$|F(u, v)| = |F(-u, -v)|$
+
+### Periodicidade
+
+FT-2D é infinitamente periódica nas direções de $u$ e $v$:
+
+$F(u, v) = F(u + k_{1}M, v) = F(u, v + k_{2}N) = F(u + k_{1}M, v + k_{2}N)$
+
+$f(x, y) = f(x + k_{1}M, y) = f(x, y + k_{2}N) = f(x + k_{1}M, y + k_{2}N)$
+
+Isso permite centralizar o componente DC na coordenada $(\frac{M}{2}, \frac{N}{2})$
+
+DFT 2D obtida multiplicando-se $f(x, y)$ por ${(-1)}^{x + y}$ antes de calcular $F(u, v)$. A FT aplicada nesse produto resulta em $F(u - \frac{M}{2}, v - \frac{N}{2})$.
+
+### Teorema da Convolução
+
+A convolução espacial discreta de duas funções $f(x, y)$ e $h(x, y)$ é dado por:
+
+$f(x, y) * h(x, y) = \sum ._{m=0}^{M-1} \sum ._{n=0}^{N-1} f(m, n) . h(x - m, y - n)$
+
+O Teorema da Convolução diz que a DFT inversa do produto $F(u, v) . H(u, v)$ resulta em $f(x, y) * h(x, y)$ (convolução espacial 2D de f e h). Ou seja, as axpressões formam um par de transformações de Fourier.
+
+$f(x, y) * h(x, y) <-> F(u, v) . H(u, v)$
