@@ -97,7 +97,9 @@ $F(u, v) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y) . e^{-j2{\pi}(\frac{ux}
 
 $F(0, 0)$ é a componente DC do espectro e é dado por:
 
-$F(0, 0) = {\sum} ._{x=0}^{M-1} {\sum} ._{y=0}^{N-1} f(x, y)$
+$F(0, 0) = \sum ._{x=0}^{M-1} \sum ._{y=0}^{N-1} f(x, y)$
+
+A componente DC do espectro é proporcional a intensidade média de uma imagem.
 
 ### Conjugado Simétrico
 
@@ -130,3 +132,11 @@ $f(x, y) * h(x, y) = \sum ._{m=0}^{M-1} \sum ._{n=0}^{N-1} f(m, n) . h(x - m, y 
 O Teorema da Convolução diz que a DFT inversa do produto $F(u, v) . H(u, v)$ resulta em $f(x, y) * h(x, y)$ (convolução espacial 2D de f e h). Ou seja, as axpressões formam um par de transformações de Fourier.
 
 $f(x, y) * h(x, y) <-> F(u, v) . H(u, v)$
+
+### Análise do Espaço de Fourier
+
+O centro do centro da transformada de Fourier, região próxima da origem, agrupa as senódeis de frequências mais baixas. Essas frequências estão associadas aos componentes de variação lenta de intensidade em uma imagem e, geralmente, possuem valores altos de magnitude, tendo em vista que são elas as principais contribuidoras da composição da imagem.
+
+Já as regiões mais afastadas do centro da transformada, agrupam as senódeis de frequências mais altas. Responsáveis por renderizar bordas de ojetos e contribuir com maior nível de detalhamento, essas frequências estão associadas à variações abruptas de intensidade em uma imagem e tendem a possuir valores inferiores de magnitude.
+
+Vale ressaltar que essa associação entre frequência e magnitude é uma generalização grosseira e que cada imagem possui suas peculiaridades.

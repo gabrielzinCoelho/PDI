@@ -1,0 +1,1 @@
+# Filtro Passa-Alta
