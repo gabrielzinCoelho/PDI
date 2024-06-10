@@ -9,6 +9,7 @@ $H_{HP}(u, v) = 1 - H_{LP}(u, v)$
 ## Filtro Passa-Alta Ideal
 
 $H(u, v) = 0, se D(u, v) \le D_{o}$
+
 $H(u, v) = 1, se D(u, v) > D_{o}$
 
 onde $D(u, v)$ é a distância euclidiana entre a coordenada $(u, v)$ e o centro da transformada de dimensões $P x Q$ pode ser calculado por:
