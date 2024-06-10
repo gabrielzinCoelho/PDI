@@ -31,6 +31,8 @@ $H(u, v) = \frac{1}{1 + {[\frac{D_o}{D(u, v)}]}^{2n}}$
 
 ## Filtro Passa-Alta Gaussiano
 
+$H(u, v) = 1 - e^{\frac{-{D(u, v)}^{2}}{2{D_o}^{2}}}$
+
 <p align="center">
     <img src="./readmeImg/GHPF.jpg" width="720px" height="540px">
 </p>
